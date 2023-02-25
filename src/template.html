@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="filter">
+        <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search" />
+        <div class="search__params">
+            <button id="go-button">GO</button>
+            <div class="radio__buttons">
+                <input type="radio" id="alive" name="status" value="alive">
+                <label for="alive">Alive</label>
+                <input type="radio" id="dead" name="status" value="dead">
+                <label for="dead">Dead</label>
+                <input type="radio" id="unknown" name="status" value="unknown">
+                <label for="unknown">Unknown</label>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <p>Info</p>
+        <img id="img" src="" alt="">
+        <p id="name"></p>
+        <button id="close-popup">Close</button>
+    </div>
+    <div id="personages-list" class="main__div">
+    </div>
+    <div class="paginations">
+        <button id="previous">Prev</button>
+        <p id="page">1</p>
+        <button id="next">Next</button>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
